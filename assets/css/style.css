@@ -1,0 +1,64 @@
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+header{
+    background: url(../img/cover.jpg) no-repeat;background-size: cover;background-position:center
+}
+
+h1 {
+    text-shadow: 2px 2px 3px #000000a6;
+}
+i.bi.bi-eye{
+    font-size: 1rem !important;
+}
+.card-text{
+    min-height: 69px;
+}
+
+a.nav-link{
+    font-weight: bold;
+}
+a.nav-link:hover{
+    color: #0d6efd !important;
+}
+
+.btn,
+.card{
+    border-radius: 0 !important;
+}
+.card{
+    border:0;
+}
+
+.card-body{
+    background-color: #294654 !important;
+}
+
+.bg-img {
+    height: 230px;
+    position: relative;
+    overflow: hidden;
+}
+
+[data-name="raiolaser"]{
+    background: url(../img/projetos/raiolaser.jpg);
+    background-size: cover;
+    background-position: top; 
+}
+[data-name="paranalog"]{
+    background: url(../img/projetos/paranalog.jpg);
+    background-size: cover;
+    background-position: top; 
+}
+[data-name="agrofoz"]{
+    background: url(../img/projetos/agrofoz.jpg);
+    background-size: cover;
+    background-position: top; 
+}
+
+.bg-img:hover {
+    animation: scroll 10s;
+}
+
+@keyframes scroll {
+    50% {background-position: bottom;}
+}
