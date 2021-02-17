@@ -1,0 +1,107 @@
+[
+    {
+    "name": "Raio Laser", 
+    "description":"Foi utilizado Bootstrap 4/jQuery, possui menu multi-categoria, busca, carrinho", 
+    "url":"http: //raiolasergames.com.br/home3/",
+    "image": "raiolaser.jpg",
+    "date": "2018"
+    },
+    {
+    "name": "Paranálog", 
+    "description":"Foi utilizado Bootstrap 4/jQuery, idiomas portugues e espanhol, widget de previsão de tempo e cotação",
+    "url":"https: //www.paranalog.com.br",
+    "image": "paranalog.jpg",
+    "date": "2019"
+    },
+    {
+    "name": "Agrofoz", 
+    "description":"Foi utilizado Bootstrap 4/jQuery, animações ao rolar pagina, lista de produtos com filtros e busca",
+    "url":"http: //www.agrofoz.com.br",
+    "image": "agrofoz.jpg",
+    "date": "2019"
+    },
+    {
+    "name": "Air Boots", 
+    "description":"Foi utilizado Bootstrap 4/jQuery, animações ao rolar pagina",
+    "url":"http: //www.airboots.com.br",
+    "image": "airboots.jpg",
+    "date": "2019"
+    },
+    {
+    "name": "Sttc", 
+    "description":"Foi utilizado Bootstrap 4/jQuery, disponivel em 3 idiomas",
+    "url":"http: //www.sttc.com.br",
+    "image": "sttc.jpg",
+    "date": "2019"
+    },
+    {
+    "name": "Radionautica", 
+    "description":"Foi utilizado Bootstrap 4/jQuery, possui menu multi-categoria, busca, carrinho",
+    "url":"http: //www.radionautica.com",
+    "image": "radionautica.jpg",
+    "date": "2019"
+    },
+    {
+    "name": "JJ 2000", 
+    "description":"Foi utilizado Bootstrap 4/jQuery, animações ao rolar pagina",
+    "url":"http: //www.jj2000.com.br",
+    "image": "jj2000.jpg",
+    "date": "2019"
+    },
+    {
+    "name": "Geon", 
+    "description":"Foi utilizado Bootstrap 4/jQuery, animações ao rolar pagina",
+    "url":"http: //www.grupogeon.com.br",
+    "image": "geon.jpg",
+    "date": "2019"
+    },
+    {
+    "name": "Todoscania", 
+    "description":"Foi utilizado Bootstrap 4/jQuery, animações ao rolar pagina",
+    "url":"http: //www.todoscania.com.py",
+    "image": "todoscania.jpg",
+    "date": "2019"
+    },
+    {
+    "name": "Audio Music", 
+    "description":"Foi utilizado Bootstrap 4/jQuery, busca instantanea, carrinho",
+    "url":"http: //www.audiomusic.com.py",
+    "image": "audiomusic.jpg",
+    "date": "2019"
+    },
+    {
+    "name": "Auto Fahes", 
+    "description":"Foi utilizado Bootstrap 4/jQuery, animações ao rolar pagina, disponivel em inglês e árabe",
+    "url":"http: //autofahesmovers.com",
+    "image": "autofahes.jpg",
+    "date": "2019"
+    },
+    {
+    "name": "Ocean Quality", 
+    "description":"Foi utilizado Bootstrap 4/jQuery, disponivel em pt-br e espanhol, widget de previsão de tempo e cotação",
+    "url":"http: //www.oceanquality.net",
+    "image": "ocean.jpg",
+    "date": "2019"
+    },
+    {
+    "name": "Mario Cel", 
+    "description":"Foi utilizado Bootstrap 4/jQuery, busca e carrinho",
+    "url":"http: //www.mariocel.com",
+    "image": "mariocel.jpg",
+    "date": "2019"
+    },
+    {
+    "name": "Multinacional", 
+    "description":"Foi utilizado Bootstrap 4/jQuery, widget de previsão de tempo e cotação",
+    "url":"http: //www.multinacionallogistica.com.br",
+    "image": "multinacional.jpg",
+    "date": "2019"
+    },
+    {
+    "name": "Transp. Amizade", 
+    "description":"Foi utilizado Bootstrap 4/jQuery, widget de previsão de tempo e cotação",
+    "url":"https: //transp-amizade.com.br",
+    "image": "transpamizade.jpg",
+    "date": "2020"
+    }
+]

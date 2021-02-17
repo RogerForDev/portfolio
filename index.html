@@ -43,10 +43,16 @@
                 <a class="nav-link text-light" href="#">Contato</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-light" href="https://www.facebook.com/rogertechfoz/" target="_blank"><i class="bi bi-facebook"></i></a>
+                <a class="nav-link text-light" href="https://www.facebook.com/rogertechfoz/" target="_blank"><i
+                    class="bi bi-facebook"></i></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-light" href="http://www.linkedin.com/in/rogerwww" target="_blank"><i class="bi bi-linkedin"></i></a>
+                <a class="nav-link text-light" href="http://www.linkedin.com/in/rogerwww" target="_blank"><i
+                    class="bi bi-linkedin"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="https://github.com/rogerfordev" target="_blank"><i
+                    class="bi bi-github"></i></a>
               </li>
               <!-- <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
@@ -64,8 +70,7 @@
     <section class="py-5 text-center">
       <div class="container py-5 text-light">
         <h1>Desenvolvedor Front-end</h1>
-        <p class="lead">Something short and leading about the collection below—its contents, the creator,
-          etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+        <p class="lead">Sou desenvolvedor front-end, trabalho com as tecnologias Bootstrap 4, jQuery e VueJS</p>
         <p>
           <a href="#" class="btn btn-primary my-2 px-4 "><i class="bi bi-whatsapp h5 me-1"></i> Contato</a>
           <a href="#" class="btn btn-secondary px-4 my-2"><i class="bi bi-briefcase h5 me-1"></i>Trabalhos</a>
@@ -75,81 +80,146 @@
   </header>
 
   <main role="main">
-
-
     <div class="album py-5 bg-dark text-light">
       <div class="container">
 
         <h3 class="text-center pb-5">Projetos desenvolvidos</h3>
 
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-          <div class="col">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="app">
+
+          <div class="col" v-for="item in list">
             <div class="card shadow-sm">
-              <div class="bg-img" data-name="raiolaser"></div>
+              <div class="bg-img" :style="{  backgroundImage: `url(assets/img/projetos/${item.image})`}">
+              </div>
               <div class="card-body">
                 <div class="card-title">
-                  <h4>Raio Laser</h4>
+                  <h4>{{ item.name }}</h4>
                 </div>
-                <p class="card-text">Foi utilizado Bootstrap 4/jQuery, possui menu multi-categoria, busca, carrinho</p>
+                <p class="card-text">{{ item.description }}</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <a href="http://raiolasergames.com.br/home3/" target="_blank"
+                    <a href="#" target="_blank"
                       class="btn btn-sm btn-outline-light"><i class="bi bi-eye me-1"></i>Visualizar</a>
                   </div>
-                  <small class="text-muted">2018</small>
+                  <small class="text-muted">{{ item.date }}</small>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <div class="bg-img" data-name="paranalog"></div>
-              <div class="card-body">
-                <div class="card-title">
-                  <h4>Paranálog</h4>
-                </div>
-                <p class="card-text">Foi utilizado Bootstrap 4/jQuery, idiomas portugues e espanhol, widget de previsão de tempo e cotação</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="https://www.paranalog.com.br" target="_blank" class="btn btn-sm btn-outline-light"><i
-                        class="bi bi-eye me-1"></i>Visualizar</a>
-                  </div>
-                  <small class="text-muted">2019</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <div class="bg-img" data-name="agrofoz"></div>
-              <div class="card-body">
-                <div class="card-title">
-                  <h4>Agrofoz</h4>
-                </div>
-                <p class="card-text">Foi utilizado Bootstrap 4/jQuery, animações ao rolar pagina, lista de produtos com filtros e busca</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="http://www.agrofoz.com.br" target="_blank" class="btn btn-sm btn-outline-light"><i
-                        class="bi bi-eye me-1"></i>Visualizar</a>
-                  </div>
-                  <small class="text-muted">2019</small>
-                </div>
-              </div>
-            </div>
-          </div>
+
         </div>
       </div>
     </div>
 
   </main>
 
-  <footer class="text-muted">
+  <footer class="text-muted bg-secondary">
     <div class="container">
-      <p class="float-right">
-        <a href="#">Back to top</a>
+      <p class="text-end mb-0">
+        <a href="#">Ir para o topo</a>
       </p>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <script>
+    var app = new Vue({
+      el: '#app',
+      data: {
+        list: [
+          { 
+            name: 'Raio Laser', 
+            description:'Foi utilizado Bootstrap 4/jQuery, possui menu multi-categoria, busca, carrinho',
+            image: 'raiolaser.jpg',
+            date: '2018' 
+          },
+          { 
+            name: 'Paranálog', 
+            description:'Foi utilizado Bootstrap 4/jQuery, idiomas portugues e espanhol, widget de previsão de tempo e cotação',
+            image: 'paranalog.jpg',
+            date: '2019' 
+          },
+          { 
+            name: 'Agrofoz', 
+            description:'Foi utilizado Bootstrap 4/jQuery, animações ao rolar pagina, lista de produtos com filtros e busca',
+            image: 'agrofoz.jpg',
+            date: '2019' 
+          },
+          { 
+            name: 'Air Boots', 
+            description:'Foi utilizado Bootstrap 4/jQuery, animações ao rolar pagina',
+            image: 'airboots.jpg',
+            date: '2019' 
+          },
+          { 
+            name: 'Sttc', 
+            description:'Foi utilizado Bootstrap 4/jQuery, disponivel em 3 idiomas',
+            image: 'sttc.jpg',
+            date: '2019' 
+          },
+          { 
+            name: 'Radionautica', 
+            description:'Foi utilizado Bootstrap 4/jQuery, possui menu multi-categoria, busca, carrinho',
+            image: 'radionautica.jpg',
+            date: '2019' 
+          },
+          { 
+            name: 'JJ 2000', 
+            description:'Foi utilizado Bootstrap 4/jQuery, animações ao rolar pagina',
+            image: 'jj2000.jpg',
+            date: '2019' 
+          },
+          { 
+            name: 'Geon', 
+            description:'Foi utilizado Bootstrap 4/jQuery, animações ao rolar pagina',
+            image: 'geon.jpg',
+            date: '2019' 
+          },
+          { 
+            name: 'Todoscania', 
+            description:'Foi utilizado Bootstrap 4/jQuery, animações ao rolar pagina',
+            image: 'todoscania.jpg',
+            date: '2019' 
+          },
+          { 
+            name: 'Audio Music', 
+            description:'Foi utilizado Bootstrap 4/jQuery, busca instantanea, carrinho',
+            image: 'audiomusic.jpg',
+            date: '2019' 
+          },
+          { 
+            name: 'Auto Fahes', 
+            description:'Foi utilizado Bootstrap 4/jQuery, animações ao rolar pagina, disponivel em inglês e árabe',
+            image: 'autofahes.jpg',
+            date: '2019' 
+          },
+          { 
+            name: 'Ocean Quality', 
+            description:'Foi utilizado Bootstrap 4/jQuery, disponivel em pt-br e espanhol, widget de previsão de tempo e cotação',
+            image: 'ocean.jpg',
+            date: '2019' 
+          },
+          { 
+            name: 'Mario Cel', 
+            description:'Foi utilizado Bootstrap 4/jQuery, busca e carrinho',
+            image: 'mariocel.jpg',
+            date: '2019' 
+          },
+          { 
+            name: 'Multinacional', 
+            description:'Foi utilizado Bootstrap 4/jQuery, widget de previsão de tempo e cotação',
+            image: 'multinacional.jpg',
+            date: '2019' 
+          },
+          { 
+            name: 'Transp. Amizade', 
+            description:'Foi utilizado Bootstrap 4/jQuery, widget de previsão de tempo e cotação',
+            image: 'transpamizade.jpg',
+            date: '2020' 
+          }
+        ]
+      }
+    })
+  </script>
 </body>
 
 </html>

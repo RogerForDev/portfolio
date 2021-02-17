@@ -37,20 +37,6 @@ a.nav-link:hover{
     height: 230px;
     position: relative;
     overflow: hidden;
-}
-
-[data-name="raiolaser"]{
-    background: url(../img/projetos/raiolaser.jpg);
-    background-size: cover;
-    background-position: top; 
-}
-[data-name="paranalog"]{
-    background: url(../img/projetos/paranalog.jpg);
-    background-size: cover;
-    background-position: top; 
-}
-[data-name="agrofoz"]{
-    background: url(../img/projetos/agrofoz.jpg);
     background-size: cover;
     background-position: top; 
 }
